@@ -2,9 +2,7 @@
 
 /*Обнуление*/
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;
-
-400;700&family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=PT+Serif:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -508,12 +506,16 @@ body.lock {
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   color: #646667;
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
+}
+
+.column__text.active {
+  display: block;
 }
 
 .column__link {
@@ -861,7 +863,7 @@ body.lock {
   .column__text {
     font-size: 14px;
     line-height: 28px;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
   }
 
   .column__link {
@@ -1016,7 +1018,7 @@ body.lock {
   }
 
   .column__text {
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
   }
 
   .block__label {

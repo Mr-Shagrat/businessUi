@@ -46,4 +46,15 @@ for (let i = 0; i < tabsLink.length; i++) {
   })
 }
 
+const readMore = document.querySelectorAll('.column__link')
 
+for (let i = 0; i < readMore.length; i++) {
+  readMore[i].addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const descriptionElement = e.target.previousElementSibling
+
+    e.target.text.length > 4 ? e.target.text = 'hide' : e.target.text = 'read more'
+    descriptionElement.classList.toggle('active')
+  })
+}
